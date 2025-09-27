@@ -1,0 +1,93 @@
+baseURL = 'https://walidashik.com'
+languageCode = 'en-us'
+title = 'Walid Ashik'
+theme = 'dream'
+defaultContentLanguage = 'en'
+
+enableGitInfo = true
+enableRobotsTXT = true
+
+[markup]
+[markup.goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+[markup.goldmark.parser.attribute]
+block = true
+[markup.goldmark.renderer]
+unsafe = true
+[markup.goldmark.extensions.passthrough]
+enable = true
+[markup.goldmark.extensions.passthrough.delimiters]
+block = [['\[', '\]'], ['$$', '$$']]
+inline = [['\(', '\)'], ['$', '$']]
+[markup.highlight]
+noClasses = false
+
+# [taxonomies]
+# category = "categories"
+# tag = "tags"
+# series = "series"
+
+[params]
+# zenMode = true
+
+lightTheme = "emerald"
+darkTheme = "forest"
+
+# backgroundImage = "img/global-background.jpg"
+# backgroundImageDark = ""
+
+images = ["img/global-background.jpg"]
+
+author = "walid ashik"
+description = "Sharing story, telling code"
+avatar = "img/author.png"
+headerTitle = "walid ashik's Blog"
+motto = "Going somewhere..."
+
+# footerBottomText = ""
+
+rss = true
+
+# utterancesRepo = "walidashik/g1eny0ung.github.io"
+
+# valine = true
+# LEANCLOUD_APP_ID = ""
+# LEANCLOUD_APP_KEY = ""
+
+# waline = true
+# walineServer = ""
+
+email = "hi@walidashik.com"
+
+siteStartYear = 2025
+
+favicon = '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌱</text></svg>"></link>'
+
+# Syntax highlighting
+customSyntaxHighlighting = true
+
+# options
+stickyNav = true
+reorderNavItems = ["about", "search", "github", "posts", "categories", "tags", "rss"]
+collapseNavItems = ["posts", "categories", "tags", "rss"]
+# noDefaultSummaryCover = true
+showTableOfContents = true
+showSummaryCoverInPost = true
+imageZoomableInPost = false
+showPrevNextPost = true
+# reorderShares = ["x", "facebook", "whatsapp"]
+
+# https://gohugo.io/templates/embedded/#configure-x-twitter-cards
+[params.social]
+twitter = "walidashik"
+
+[params.navItems]
+github = { href = "https://github.com/walidashik", target = "_blank", icon = "logo-github", title = "GitHub" }
+
+[params.advanced]
+customCSS = ["css/custom.css"]
+# customJS = []
+
+[params.experimental]
+jsDate = true
+jsDateFormat = "dd MM yyyy"
