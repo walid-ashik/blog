@@ -41,8 +41,8 @@ images = ["img/global-background.jpg"]
 author = "walid ashik"
 description = "Sharing story, telling code"
 avatar = "img/author.png"
-headerTitle = "walid ashik's Blog"
-motto = "Going somewhere..."
+headerTitle = "Walid Ashik"
+motto = ""
 
 # footerBottomText = ""
 
@@ -82,12 +82,12 @@ showPrevNextPost = true
 twitter = "walidashik"
 
 [params.navItems]
-github = { href = "https://github.com/walidashik", target = "_blank", icon = "logo-github", title = "GitHub" }
+github = { href = "https://github.com/walid-ashik", target = "_blank", icon = "logo-github", title = "GitHub" }
 
 [params.advanced]
 customCSS = ["css/custom.css"]
 # customJS = []
 
 [params.experimental]
-jsDate = true
+jsDate = false
 jsDateFormat = "dd MM yyyy"
