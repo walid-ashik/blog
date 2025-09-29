@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tag2 on My New Hugo Site</title>
+    <link>http://localhost:1313/tags/tag2/</link>
+    <description>Recent content in Tag2 on My New Hugo Site</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 27 Sep 2025 12:00:51 +0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/tag2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hello World</title>
+      <link>http://localhost:1313/posts/hello-world/</link>
+      <pubDate>Sat, 27 Sep 2025 12:00:51 +0600</pubDate>
+      <guid>http://localhost:1313/posts/hello-world/</guid>
+      <description>&lt;h1 id=&#34;why-solid-&#34;&gt;Why S.O.L.I.D ?&lt;/h1&gt;&#xA;&lt;p&gt;The broad goal of the SOLID principles is to &lt;strong&gt;reduce dependencies so that engineers change one area of software without&#xA;impacting others.&lt;/strong&gt; Additionally, they’re intended to make designs easier to understand, maintain, and extend.&lt;/p&gt;&#xA;&lt;p&gt;Using these design principles makes it easier for software engineers to avoid issues and to build &lt;strong&gt;adaptive, effective,&#xA;and agile software.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;h1 id=&#34;problems--solution-using-solid&#34;&gt;Problems &amp;amp; Solution using SOLID&lt;/h1&gt;&#xA;&lt;p&gt;&lt;strong&gt;Readable:&lt;/strong&gt; We are constantly reading old code as part of the&#xA;effort to write code. We spend more time reading&#xA;than writing code. This becomes more complex day by day when&#xA;more code is added &amp;amp; team grows.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

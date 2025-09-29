@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en-us"
+  x-data
+  :class="$store.darkMode.class()"
+  :data-theme="$store.darkMode.theme()">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প | Walid Ashik</title>
+
+    
+  
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌱</text></svg>"></link>
+  
+
+
+<link rel="canonical" href="http://localhost:1313/posts/backend-developer-starts-a-coffee-business/" />
+
+
+
+<meta name="author" content="Walid Ashik" />
+<meta name="description" content="আজকে একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প সেয়ার করবো।
+কফি কাহফের ফাউন্ডার Md Mohiuddin ভাই আমার দীর্ঘদিনের পরিচিত। ভাইয়ের সাথে অনেক আগে আমি একটা প্রজেক্টে কাজ করেছিলাম।
+ঐ প্রজেক্টের ব্যাকএন্ড টা করেছিলেন উনি, আর আমি করেছিলাম ফ্রন্টএন্ড এর কাজ।
+সেই কাজ শেষ হওয়ার দীর্ঘদিন পর একদিন হঠ্যাত ভাইয়ের কল। তারপর ভাইয়ের সাথে একদিন হার্ফিতে দেখা। দীর্ঘ কয়েক বছর পর সেদিন উনার সাথে আমার প্রথম দেখা এবং যা বুঝতে পারলাম যে ভাই একজন তুখোড় ব্যাকএন্ড ডেভলপার।
+" />
+
+
+<meta name="keywords" content="Story,Business,Coffee">
+
+
+
+<meta name="generator" content="Hugo 0.150.1">
+
+
+<meta property="og:url" content="http://localhost:1313/posts/backend-developer-starts-a-coffee-business/">
+  <meta property="og:site_name" content="Walid Ashik">
+  <meta property="og:title" content="একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প">
+  <meta property="og:description" content="আজকে একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প সেয়ার করবো।
+কফি কাহফের ফাউন্ডার Md Mohiuddin ভাই আমার দীর্ঘদিনের পরিচিত। ভাইয়ের সাথে অনেক আগে আমি একটা প্রজেক্টে কাজ করেছিলাম।
+ঐ প্রজেক্টের ব্যাকএন্ড টা করেছিলেন উনি, আর আমি করেছিলাম ফ্রন্টএন্ড এর কাজ।
+সেই কাজ শেষ হওয়ার দীর্ঘদিন পর একদিন হঠ্যাত ভাইয়ের কল। তারপর ভাইয়ের সাথে একদিন হার্ফিতে দেখা। দীর্ঘ কয়েক বছর পর সেদিন উনার সাথে আমার প্রথম দেখা এবং যা বুঝতে পারলাম যে ভাই একজন তুখোড় ব্যাকএন্ড ডেভলপার।">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="posts">
+    <meta property="article:published_time" content="2025-09-27T12:00:51+06:00">
+    <meta property="article:modified_time" content="2025-09-27T13:03:10+06:00">
+    <meta property="article:tag" content="Story">
+    <meta property="article:tag" content="Business">
+    <meta property="article:tag" content="Coffee">
+    <meta property="og:image" content="http://localhost:1313/img/global-background.jpg">
+
+
+
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="http://localhost:1313/img/global-background.jpg">
+  <meta name="twitter:title" content="একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প">
+  <meta name="twitter:description" content="আজকে একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প সেয়ার করবো।
+কফি কাহফের ফাউন্ডার Md Mohiuddin ভাই আমার দীর্ঘদিনের পরিচিত। ভাইয়ের সাথে অনেক আগে আমি একটা প্রজেক্টে কাজ করেছিলাম।
+ঐ প্রজেক্টের ব্যাকএন্ড টা করেছিলেন উনি, আর আমি করেছিলাম ফ্রন্টএন্ড এর কাজ।
+সেই কাজ শেষ হওয়ার দীর্ঘদিন পর একদিন হঠ্যাত ভাইয়ের কল। তারপর ভাইয়ের সাথে একদিন হার্ফিতে দেখা। দীর্ঘ কয়েক বছর পর সেদিন উনার সাথে আমার প্রথম দেখা এবং যা বুঝতে পারলাম যে ভাই একজন তুখোড় ব্যাকএন্ড ডেভলপার।">
+      <meta name="twitter:site" content="@walidashik">
+
+
+
+
+<link rel="stylesheet" href="/css/output.css" />
+
+
+
+
+    
+
+
+<link rel="stylesheet" data-custom-syntax-highlighting />
+<style>
+  .chroma {
+    padding: 1em;
+    background-color: var(--dream-pre-bg, #f5f5f5);
+    border-radius: .5em;
+    overflow: auto;
+  }
+
+  html.dark .chroma {
+    background-color: var(--dream-pre-bg-dark, #262626);
+  }
+</style>
+
+
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3/dist/cdn.min.js" integrity="sha256-4EHxtjnR5rL8JzbY12OKQJr81ESm7JBEb49ORPo29AY=" crossorigin="anonymous"></script>
+  </head>
+
+  <body x-data="{
+    flip: false,
+  }">
+    
+    <div id="dream-global-bg"></div>
+
+    
+<nav x-data="{ isSticky: false }"
+  x-init="window.addEventListener('scroll', () => { isSticky = window.scrollY > 30 })"
+  class="sticky top-0 z-30 mt-4 lg:mt-8 py-4"
+  :class="{ 'bg-base-100 shadow-lg dark:border-b dark:border-base-content/30': isSticky }">
+
+  
+  <div class="container flex justify-between px-4">
+  
+    <section class="flex items-center gap-4">
+      <div class="avatar cursor-pointer hover:avatar-online" @click="flip = !flip" title="Flip it!">
+        <div class="h-10 rounded-full">
+          <img src="/img/author.png" alt="Walid Ashik" />
+        </div>
+      </div>
+
+      
+      <div>
+        
+        <a href="http://localhost:1313/" class="text-lg font-semibold cursor-pointer">
+          Walid Ashik
+        </a>
+        
+        
+      </div>
+      
+    </section>
+
+    
+    
+      
+    
+
+    <div class="dropdown dropdown-end sm:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-square" aria-label="Select an option">
+        <ion-icon name="menu" class="text-2xl"></ion-icon>
+      </div>
+      <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-md">
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="https://github.com/walid-ashik" target="_blank" title="GitHub">
+    
+    <ion-icon name="logo-github"></ion-icon>
+    
+    GitHub
+  </a>
+</li>
+
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+
+
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </ul>
+    </div>
+    <section class="hidden sm:flex sm:items-center sm:gap-2 md:gap-4">
+      
+
+      
+      
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+
+
+      
+      
+
+
+
+  
+  <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" href="https://github.com/walid-ashik" target="_blank" title="GitHub">
+    <ion-icon class="group-hover:text-primary-content" name="logo-github"></ion-icon>
+  </a>
+  
+
+
+
+      
+
+      <div class="dropdown dropdown-end dropdown-hover">
+        <div tabindex="0" role="button" class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary" aria-label="Select an option">
+          <ion-icon class="group-hover:text-primary-content text-xl" name="menu"></ion-icon>
+        </div>
+        <ul tabindex="0" class="dropdown-content menu w-36 bg-base-100 rounded-box z-1 shadow-xl">
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/posts" title="Archives">
+    <ion-icon name="archive"></ion-icon>
+    Archives
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/categories" title="All Categories">
+    <ion-icon name="grid"></ion-icon>
+    All Categories
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/tags" title="All Tags">
+    <ion-icon name="pricetags"></ion-icon>
+    All Tags
+  </a>
+</li>
+
+
+          
+          
+<li>
+  <a class="inline-flex items-center p-2 cursor-pointer" href="/index.xml" title="RSS">
+    <ion-icon name="logo-rss"></ion-icon>
+    RSS
+  </a>
+</li>
+
+
+          
+
+          
+          
+
+
+
+
+
+
+
+
+
+
+          
+        </ul>
+      </div>
+      
+    </section>
+  </div>
+</nav>
+
+
+    <div class="flip-container" :class="{ 'flip-it': flip }">
+      <div class="flipper">
+        <div class="front">
+          <div class="container">
+            
+<div class="lg:grid lg:grid-cols-4 gap-4 mt-4 px-4">
+  <div class="hidden lg:block">
+    
+  </div>
+
+  <div class="lg:col-span-2">
+    <article class="mx-auto prose prose-quoteless dark:prose-invert" id="dream-single-post-main" itemscope itemtype="http://schema.org/Article">
+      
+  <meta itemprop="name" content="একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প">
+  <meta itemprop="description" content="আজকে একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প সেয়ার করবো।
+কফি কাহফের ফাউন্ডার Md Mohiuddin ভাই আমার দীর্ঘদিনের পরিচিত। ভাইয়ের সাথে অনেক আগে আমি একটা প্রজেক্টে কাজ করেছিলাম।
+ঐ প্রজেক্টের ব্যাকএন্ড টা করেছিলেন উনি, আর আমি করেছিলাম ফ্রন্টএন্ড এর কাজ।
+সেই কাজ শেষ হওয়ার দীর্ঘদিন পর একদিন হঠ্যাত ভাইয়ের কল। তারপর ভাইয়ের সাথে একদিন হার্ফিতে দেখা। দীর্ঘ কয়েক বছর পর সেদিন উনার সাথে আমার প্রথম দেখা এবং যা বুঝতে পারলাম যে ভাই একজন তুখোড় ব্যাকএন্ড ডেভলপার।">
+  <meta itemprop="datePublished" content="2025-09-27T12:00:51+06:00">
+  <meta itemprop="dateModified" content="2025-09-27T13:03:10+06:00">
+  <meta itemprop="wordCount" content="638">
+  <meta itemprop="image" content="http://localhost:1313/img/global-background.jpg">
+  <meta itemprop="keywords" content="Story,Business,Coffee">
+
+      <header>
+        <h1 itemprop="headline">একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প</h1>
+        <p class="text-sm">
+          
+            Saturday, Sep 27, 2025
+          
+
+          | <span>3 minute read</span>
+
+          
+          | <span>Updated at
+            
+              Saturday, Sep 27, 2025
+            </span>
+          
+        </p>
+
+        
+        <div class="flex justify-between">
+          
+            <div class="flex items-center">
+  
+  <div class="avatar mr-1">
+    <div class="w-8 rounded-full">
+      <img class="my-0!" src="/img/author.png" alt="Walid Ashik" />
+    </div>
+  </div>
+  
+
+  <span itemprop="author" itemscope itemtype="https://schema.org/Person">
+  
+    
+      <span itemprop="name">Walid Ashik</span>
+    
+  
+  </span>
+</div>
+
+          
+
+          <div class="flex items-center gap-2">
+  
+  
+
+  
+  
+  
+  
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://x.com/intent/post?text=%e0%a6%8f%e0%a6%95%e0%a6%9c%e0%a6%a8%20Backend%20Developer%20%e0%a6%8f%e0%a6%b0%20Coffee%20%e0%a6%ac%e0%a6%bf%e0%a6%9c%e0%a6%a8%e0%a7%87%e0%a6%b8%20%e0%a6%b6%e0%a7%81%e0%a6%b0%e0%a7%81%20%e0%a6%95%e0%a6%b0%e0%a6%be%e0%a6%b0%20%e0%a6%97%e0%a6%b2%e0%a7%8d%e0%a6%aa&amp;url=http://localhost:1313/posts/backend-developer-starts-a-coffee-business/" target="_blank" rel="noopener noreferrer"
+      title="Share on X">
+      <ion-icon class="group-hover:text-primary-content" name="logo-x"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://facebook.com/sharer/sharer.php?u=http://localhost:1313/posts/backend-developer-starts-a-coffee-business/" target="_blank" rel="noopener noreferrer"
+      title="Share on Facebook">
+      <ion-icon class="group-hover:text-primary-content" name="logo-facebook"></ion-icon>
+    </a>
+  
+    <a class="group inline-flex items-center p-2 rounded-full cursor-pointer hover:bg-primary"
+      href="https://wa.me/?text=%e0%a6%8f%e0%a6%95%e0%a6%9c%e0%a6%a8%20Backend%20Developer%20%e0%a6%8f%e0%a6%b0%20Coffee%20%e0%a6%ac%e0%a6%bf%e0%a6%9c%e0%a6%a8%e0%a7%87%e0%a6%b8%20%e0%a6%b6%e0%a7%81%e0%a6%b0%e0%a7%81%20%e0%a6%95%e0%a6%b0%e0%a6%be%e0%a6%b0%20%e0%a6%97%e0%a6%b2%e0%a7%8d%e0%a6%aa%20http://localhost:1313/posts/backend-developer-starts-a-coffee-business/" target="_blank" rel="noopener noreferrer"
+      title="Share on WhatsApp">
+      <ion-icon class="group-hover:text-primary-content" name="logo-whatsapp"></ion-icon>
+    </a>
+  
+
+  
+  
+</div>
+
+        </div>
+      </header>
+
+      <section id="dream-single-post-content" itemprop="articleBody">
+        
+          <figure>
+            <img class="z-30" src="backend_developer_coffee_business_story.png" alt="একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প" />
+            
+              <figcaption class="text-sm italic text-center mt-2">Backend developer at droidcon</figcaption>
+            
+          </figure>
+        
+
+        <p>আজকে একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প সেয়ার করবো।</p>
+<p>কফি কাহফের ফাউন্ডার Md Mohiuddin ভাই আমার দীর্ঘদিনের পরিচিত। ভাইয়ের সাথে অনেক আগে আমি একটা প্রজেক্টে কাজ করেছিলাম।</p>
+<p>ঐ প্রজেক্টের ব্যাকএন্ড টা করেছিলেন উনি, আর আমি করেছিলাম ফ্রন্টএন্ড এর কাজ।</p>
+<p>সেই কাজ শেষ হওয়ার দীর্ঘদিন পর  একদিন হঠ্যাত ভাইয়ের কল। তারপর ভাইয়ের সাথে একদিন হার্ফিতে দেখা। দীর্ঘ কয়েক বছর পর সেদিন উনার সাথে আমার প্রথম দেখা এবং যা বুঝতে পারলাম যে ভাই একজন তুখোড় ব্যাকএন্ড ডেভলপার।</p>
+<p>যাইহোক, কথার এক ফাকে জানতে পারলাম কফিতে উনি পি এইচ ডি মত করে ফেলেছেন। উনার মত কফি ফ্রিক আমি এর আগে কখনো কাউকে দেখি নাই।</p>
+<p>এস্প্রেসো, এরোস্পেস, ভি ৬০, মকা পট, ফিল্টার পেপার, ফ্রেন্স প্রেস কফি। মানে কফির এ ট্যু যেড উনি জানেন। আমিও দীর্ঘদিন যাবৎ কফির পিছনে বহু টাকা পয়ষা উড়িয়ে এসব কিছুর টুকিটাকি জিনিস সম্পর্কে ধারণা অর্জন করেছি।</p>
+<p>তারপর, ভাইয়ের মত একজন মানুষের সাথে দেখা করার এবং প্রতিনিয়ত কথা বার্তা হবার ব্যাপারটা আমার জন্যে বেশ আনন্দের ছিল।</p>
+<p>ভাইয়ের সাথে আড্ডা দিতে দিতে একদিন জানলাম, উনি কফি নিয়ে কিছু একটা শুরু করবেন ভাবছেন।</p>
+<p>জানলাম, উনি কফির বিজনেস শুরু করতে যাচ্ছেন। অবশ্য শুরুতে উনি বিজনেস করবেন বলে কিছু ঠিক করেছিলেন না। উনি জাস্ট কফি ব্লগ করবেন ভেবেছিলেন।</p>
+<p>কিন্তু, উনার শুভাকাঙ্ক্ষী এক ভাইয়ের পরামর্শে উনি দেখলেন, কফি নিয়ে যখন ব্লগই লিখবেন তখন এর পাশাপাশি একটা বিজনেস দাড় করাতে পারলে ব্যপারটা আরেকটু সাস্টেইনেবল হবে।</p>
+<p>এজ ইউজাল সবার  মত উনি কিনে ফেললেন একটা ডোমেইন। করে ফেললেন ওয়েবসাইট ডিজাইন। কিন্তু তখনো প্রডাক্ট হাতে এসে পৌছায় নি।</p>
+<p>উনি বেশ ঘুরাঘুরি করলেন ঢাকার বিভিন্ন মার্কেটে মার্কেটে এবং কিছু রিভার্স ইঞ্জিনিয়ারিং এর জ্ঞ্যান কাজে লাগিয়ে ইন্টারন্যাশনাল কফি এক্সেসরিজ এবং কফি(বিন ও গ্রাউন্ড কফি)  ইম্পোর্টের একটা লাইন-ঘাট বের করে ফেললেন।</p>
+<p>অর্ডার করলেন বেশ কিছু LavAzza গ্রাউন্ড কফি, মকা পট, ফ্রেন্স প্রেস, ট্রাভেল ফ্রেন্ডলি ফিল্টার পেপার + পোউর-ওভার সেটাপ।</p>
+<p>কিন্তু উনি আর সেভাবে কফি বিজনেসটা লন্স করতে পারলেন না। টিপিক্যাল ইঞ্জিনিয়ারদের প্রোডাক্ট লন্সের জার্নি যেমন হয়। প্রডাক্ট লন্স করতে কিছু ডকুমেন্টস এবং আনাড়ি কিছু নট-এঞ্জয়েবল কাজ থাকে যেগুলো অনেক ক্ষেত্রে বাধা হয়ে দাড়ায়। যেসব কাজ ইঞ্জিয়ারদের জন্যে কঠিন।</p>
+<p>আমাদের মজা লাগে কোড করতে। কম্পিউটার নিয়ে খেলতে। বিজনেস দাড় করানো খুব একটা কোডিং এর পাজল সলভ করার মত এঞ্জয় করার জিনিস না। একটাই কারন, বিজনেসে কোন ইন্সট্যান্ট রেজাল্ট নাই।</p>
+<p>বিজনেসে যাই করেন না কেনো, সময় লাগে অনেক। মার্কেটিং করবেন, এক্সাট কোন ফর্মুলা, লিন্ট ওয়ার্নিং বা ডকুমেন্টসন নাই যেটা দেখে দেখে করবেন। তারপর, ধরেন মার্কেটিং এর কিছু করলেনও কিন্তু এর আউটপুট কন্সোলে দেখা যায় না। টেস্ট কোড দিয়ে আইডিয়া ভ্যালিডেটও করা যায় না।</p>
+<p>এজন্যে এবং নানাবিধ কারনে ইঞ্জিনিয়ারিং ব্যাকগ্রাউন্ডের লোকেদের বিজনেস করাটা অনেকখানি কঠিন। একারনে আমরা অনেক কিছু শুরু করেও শেষ করতে পারি না।</p>
+<p>মহিউদ্দিন ভাইয়ের ক্ষেত্রেও তেমনই একটা ফেজ যাচ্ছিলো। আমি বিষয়টা অনুধাবন করার পর বুঝলাম, উনি উপরের বর্ণনাকৃত কারন এবং পারফেকশনের ব্যাড়াজালে আটকে গেছেন।</p>
+<p>বুঝতে পারলাম, উনার এখন একটু প্রয়োজন কিছু জিনিশ অভারলুক করার। উনি কফি কাহফের ওয়েবসাইট টা কোড করতেছিলেন কিন্তু কোনভাবেই তা শেষ করতে পারছিলেন না।</p>
+<p>উনি আমাকে প্রায়ই বলতেন, &ldquo;ভাই আর কিছু বাগ আছে, সব গুলা শেষ করেই লন্সিংয়ে যাবো&rdquo;</p>
+<p>এভাবে কয়েক সপ্তাহ যাউয়ার পর সেইম ঘটনার পুনরাবৃত্তি। পরে উনাকে বললাম, &ldquo;যাই ই হোক, যাই ই থাক না কেনো, আপনি লন্স করেন। দুই একটা বাগ সলভ না করলে তেমন কিছু যায় আসে না। সব প্রোডাক্টেই বাগ থাকে। ডেভলপার মাইন্ডসেট থেকে বের হয়ে বিজনেস মাইন্ডসেটে আসেন ভাই।&rdquo;</p>
+<p>উনাকে আরো বললাম, &ldquo;এয়ার বি এন বি তিনবার লন্স করছে। দরকার হলে আপনিও তিন বার লন্স করবেন। সব বাদ দিয়ে আগে লন্স করেন।&rdquo;</p>
+<p>ব্যাপারটা দেখলাম কনভেন্সিং ছিল। উনি কিছু এক্সেস্টিং বাগ উপেক্ষা করেই লন্স করলেন coffeekahf.com</p>
+<p>উনার জন্যে ব্যাপারটা খুবই রোমাঞ্চকর। এতদিনের এত রাত জাগা, এত সোর্স খুজে বের করে প্রোডাক্ট ইম্পোর্ট করা। এত দিনের এত-এত প্রিপারেশন শেষে উনি ফাইনালি লন্স করলেন।</p>
+<p>এবং, আলহামদুলিল্লাহ এই লন্স টা ছিল একটি সাকসেস। এরপরের Coffee Kahf এর জার্নিটা ছিল আরো বেশি থ্রিলিং। কফি কাহফের সাথে আমার জয়েনিং ও আমি কো-ফাউন্ডার হিসেবে অনবোর্ড হওয়ার পর বিজনেস করতে যেয়ে যেসব জিনিশ গুলো শিখেছি সেই গল্প আগামী কোন একদিন লিখবো ইনশাল্লাহ।</p>
+<p>কফি বিজনেস সমাচার (পর্ব ১/৪)</p>
+
+
+        
+      </section>
+
+      
+      <div class="divider"></div>
+      <div class="flex flex-col md:flex-row justify-between gap-4 py-4">
+        
+        <div></div>
+        
+
+        
+        <div></div>
+        
+      </div>
+      
+
+      
+    </article>
+  </div>
+
+  <div
+    x-data="tocHighlighter()"
+    @scroll.window="debouncedScroll"
+    class="hidden lg:flex lg:flex-col lg:items-end"
+  >
+    
+      <nav id="TableOfContents"></nav>
+    
+  </div>
+</div>
+
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 Walid Ashik
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+        <div class="back">
+          <div class="container">
+            
+            <div class="dream-grid dream-grid-about">
+  
+
+  
+
+  
+</div>
+
+            
+
+            
+<footer class="flex justify-between items-center gap-2 px-4 py-12">
+
+  <div>
+  
+  <p>
+    © 2025 Walid Ashik
+  </p>
+  
+
+  
+  <p class="text-sm">
+    🌱
+    <span class="text-base-content/60">
+      Powered by <a class="hover:underline" href="https://gohugo.io/" target="_blank">Hugo</a> with theme
+      <a class="hover:underline" href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</span
+    >
+  </p>
+  
+</div>
+
+  <div
+  x-data="{ icons: [
+    { name: 'sunny', status: 'n' },
+    { name: 'moon', status: 'y' },
+    { name: 'desktop', status: 'auto' }
+  ] }"
+  class="flex items-center gap-2 h-[32px] px-2 bg-base-100 border border-base-content/30 rounded-full"
+>
+  <template x-for="icon in icons">
+    <div
+      role="button"
+      tabindex="0"
+      :aria-label="'Select ' + icon.name + ' mode'"
+      class="group inline-flex justify-center items-center p-1 rounded-full cursor-pointer hover:bg-primary"
+      :class="$store.darkMode.icon() === icon.name && 'bg-primary'"
+      @click="$store.darkMode.toggle(icon.status)"
+    >
+      <ion-icon
+        :name="`${icon.name}-outline`"
+        class="group-hover:text-primary-content"
+        :class="$store.darkMode.icon() === icon.name && 'text-primary-content'"
+      >
+      </ion-icon>
+    </div>
+  </template>
+</div>
+
+</footer>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+  window.lightTheme = "emerald"
+  window.darkTheme = "forest"
+</script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@5.0.0/imagesloaded.pkgd.min.js" integrity="sha256-htrLFfZJ6v5udOG+3kNLINIKh2gvoKqwEhHYfTTMICc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+
+  
+  
+  <script src="/js/grid.js"></script>
+
+
+
+
+<script src="/js/main.js"></script>
+
+    
+
+
+
+<script>
+    window.customSyntaxHighlighting = {
+      light: "/css/syntax-light.min.css",
+      dark: "/css/syntax-dark.min.css"
+    }
+
+    document.addEventListener('alpine:initialized', () => {
+      var isDark = Alpine.store('darkMode').isDark()
+      var customSyntaxHighlightingUrl = isDark ? window.customSyntaxHighlighting.dark : window.customSyntaxHighlighting.light
+
+      document
+        .querySelector('link[data-custom-syntax-highlighting]')
+        .setAttribute('href', customSyntaxHighlightingUrl)
+    })
+  </script>
+
+
+
+
+<script src="/js/toc.js"></script>
+
+
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.esm.js" integrity="sha256-/IFmi82bIhdYWctu0UddSlJqpnzWm7Vh2C4CM32wF/k=" crossorigin="anonymous"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/ionicons@7.4.0/dist/ionicons/ionicons.js" integrity="sha256-mr7eJMX3VC3F7G32mk4oWp1C6a2tlMYxUdptfT7uKI8=" crossorigin="anonymous"></script>
+  </body>
+</html>
