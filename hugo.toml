@@ -91,3 +91,10 @@ customCSS = ["css/custom.css"]
 [params.experimental]
 jsDate = false
 jsDateFormat = "dd MM yyyy"
+
+[build]
+publish = "public"
+command = """\
+  git config core.quotepath false && \
+  hugo --gc --minify --baseURL "${URL}"
+  """
