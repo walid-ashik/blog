@@ -1,5 +1,5 @@
 ---
-title: একজন Backend Developer এর Coffee বিজনেস শুরু করার গল
+title: একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প 
 date: 2025-09-27T12:00:51+06:00
 lastmod: 2025-09-27T12:00:51+06:00
 author: Walid Ashik
