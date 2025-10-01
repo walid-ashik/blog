@@ -40,9 +40,9 @@ images = ["img/global-background.jpg"]
 
 author = "walid ashik"
 description = "Sharing story, telling code"
-avatar = "img/author.png"
+avatar = "img/author.jpeg"
 headerTitle = "Walid Ashik"
-motto = ""
+motto = "My corner of the internet"
 
 # footerBottomText = ""
 
@@ -60,8 +60,7 @@ rss = true
 email = "hi@walidashik.com"
 
 siteStartYear = 2025
-
-favicon = '<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%2210 0 100 100%22><text y=%22.90em%22 font-size=%2290%22>🌱</text></svg>"></link>'
+favicon = 'favicon.ico'
 
 # Syntax highlighting
 customSyntaxHighlighting = true

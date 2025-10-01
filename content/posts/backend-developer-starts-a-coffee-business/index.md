@@ -3,7 +3,7 @@ title: একজন Backend Developer এর Coffee বিজনেস শুর
 date: 2025-09-27T12:00:51+06:00
 lastmod: 2025-09-27T12:00:51+06:00
 author: Walid Ashik
-avatar: /img/author.png
+avatar: /img/author.jpeg
 # authorlink: https://author.site
 cover: backend_developer_coffee_business_story.png
 covercaption: Backend developer at droidcon
