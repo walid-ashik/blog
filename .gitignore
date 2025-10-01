@@ -2,9 +2,6 @@
 
 # output
 
-# themes
-themes/*
-!themes/.gitkeep
 
 # hugo
 resources
