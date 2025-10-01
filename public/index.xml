@@ -2,18 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Walid Ashik</title>
-    <link>http://localhost:1313/</link>
+    <link>https://walidashik.com/</link>
     <description>Recent content on Walid Ashik</description>
-    <generator>Hugo</generator>
+    <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 27 Sep 2025 13:03:10 +0600</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প</title>
-      <link>http://localhost:1313/posts/backend-developer-starts-a-coffee-business/</link>
-      <pubDate>Sat, 27 Sep 2025 12:00:51 +0600</pubDate>
-      <guid>http://localhost:1313/posts/backend-developer-starts-a-coffee-business/</guid>
-      <description>&lt;p&gt;আজকে একজন Backend Developer এর Coffee বিজনেস শুরু করার গল্প সেয়ার করবো।&lt;/p&gt;&#xA;&lt;p&gt;কফি কাহফের ফাউন্ডার Md Mohiuddin ভাই আমার দীর্ঘদিনের পরিচিত। ভাইয়ের সাথে অনেক আগে আমি একটা প্রজেক্টে কাজ করেছিলাম।&lt;/p&gt;&#xA;&lt;p&gt;ঐ প্রজেক্টের ব্যাকএন্ড টা করেছিলেন উনি, আর আমি করেছিলাম ফ্রন্টএন্ড এর কাজ।&lt;/p&gt;&#xA;&lt;p&gt;সেই কাজ শেষ হওয়ার দীর্ঘদিন পর  একদিন হঠ্যাত ভাইয়ের কল। তারপর ভাইয়ের সাথে একদিন হার্ফিতে দেখা। দীর্ঘ কয়েক বছর পর সেদিন উনার সাথে আমার প্রথম দেখা এবং যা বুঝতে পারলাম যে ভাই একজন তুখোড় ব্যাকএন্ড ডেভলপার।&lt;/p&gt;</description>
-    </item>
+    <atom:link href="https://walidashik.com/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
