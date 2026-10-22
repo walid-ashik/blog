@@ -1,0 +1,52 @@
+{{ define "title" }}
+{{- .Title -}}
+{{ end }}
+
+{{ define "main"}}
+
+<div class="mt-8 lg:mt-12 px-4">
+  <div class="mx-auto prose dark:prose-invert">
+    <h1 class="text-3xl">{{ .Title }}</h1>
+    {{ if .Content }}
+    <div class="text-sm">{{ .Content }}</div>
+    {{ end }}
+  </div>
+
+  <div class="max-w-[65ch] mx-auto mt-8 lg:mt-12">
+    <ul class="timeline timeline-vertical reading-timeline">
+      {{ range .Pages.GroupByDate "January 2006" }}
+      <li>
+        <hr class="dark:bg-base-content" />
+        <div class="timeline-start justify-self-start!">
+          <div class="reading-month">{{ .Key }}</div>
+        </div>
+        <div class="timeline-middle flex items-center mx-8 my-2">
+          <ion-icon name="book"></ion-icon>
+        </div>
+        <div class="timeline-end timeline-box dark:border-base-content/60 my-8 reading-entries">
+          {{ range .Pages }}
+          {{ $book := . }}
+          <a class="reading-entry" href="{{ .RelPermalink }}">
+            {{ with .Resources.GetMatch (default "cover.*" .Params.cover) }}
+            {{ $thumb := .Resize "160x webp q80" }}
+            <img class="reading-cover-thumb" src="{{ $thumb.RelPermalink }}" width="{{ $thumb.Width }}" height="{{ $thumb.Height }}" alt="{{ $book.Title }} cover" loading="lazy" />
+            {{ end }}
+            <div>
+              {{ if eq .Params.status "reading" }}
+              <span class="reading-badge">Currently reading</span>
+              {{ else if eq .Params.status "finished" }}
+              <span class="reading-badge reading-badge-done">Finished</span>
+              {{ end }}
+              <div class="reading-title">{{ .Title }}</div>
+              {{ with .Params.bookAuthor }}<div class="reading-author">by {{ . }}</div>{{ end }}
+            </div>
+          </a>
+          {{ end }}
+        </div>
+        <hr class="dark:bg-base-content" />
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,28 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "main" }}
+<div class="mt-8 lg:mt-12 px-4">
+  <article class="mx-auto prose prose-quoteless dark:prose-invert">
+    <a class="reading-back" href="{{ .Parent.RelPermalink }}">&larr; {{ .Parent.Title }}</a>
+
+    <header class="reading-header">
+      {{ with .Resources.GetMatch (default "cover.*" .Params.cover) }}
+      {{ $cover := .Resize "480x webp q85" }}
+      <img class="reading-cover" src="{{ $cover.RelPermalink }}" width="{{ $cover.Width }}" height="{{ $cover.Height }}" alt="{{ $.Title }} cover" />
+      {{ end }}
+      <div>
+        {{ if eq .Params.status "reading" }}
+        <span class="reading-badge">Currently reading</span>
+        {{ else if eq .Params.status "finished" }}
+        <span class="reading-badge reading-badge-done">Finished</span>
+        {{ end }}
+        <h1>{{ .Title }}</h1>
+        {{ with .Params.bookAuthor }}<p class="reading-author">by {{ . }}</p>{{ end }}
+        <p class="text-sm">Started {{ .Date | time.Format "January 2006" }}</p>
+      </div>
+    </header>
+
+    {{ .Content }}
+  </article>
+</div>
+{{ end }}
