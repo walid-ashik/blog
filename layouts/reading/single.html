@@ -18,7 +18,7 @@
         {{ end }}
         <h1>{{ .Title }}</h1>
         {{ with .Params.bookAuthor }}<p class="reading-author">by {{ . }}</p>{{ end }}
-        <p class="text-sm">Started {{ .Date | time.Format "January 2006" }}</p>
+        <p class="text-sm">Started {{ .Date | time.Format "January 2006" }}{{ with .Params.finished }} · Finished {{ . | time.Format "January 2006" }}{{ end }}</p>
       </div>
     </header>
 
