@@ -78,13 +78,6 @@
   color: var(--color-primary-content);
 }
 
-.reading-badge-done {
-  background: transparent;
-  color: inherit;
-  border: 1px solid currentColor;
-  opacity: 0.7;
-}
-
 .reading-back {
   font-size: 0.875rem;
   text-decoration: none;

@@ -13,8 +13,6 @@
       <div>
         {{ if eq .Params.status "reading" }}
         <span class="reading-badge">Currently reading</span>
-        {{ else if eq .Params.status "finished" }}
-        <span class="reading-badge reading-badge-done">Finished</span>
         {{ end }}
         <h1>{{ .Title }}</h1>
         {{ with .Params.bookAuthor }}<p class="reading-author">by {{ . }}</p>{{ end }}
