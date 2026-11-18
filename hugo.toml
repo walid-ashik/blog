@@ -7,6 +7,9 @@ defaultContentLanguage = 'en'
 enableGitInfo = true
 enableRobotsTXT = true
 
+[services.googleAnalytics]
+id = "G-LQ9TVNPDWG"
+
 [markup]
 [markup.goldmark.parser]
 wrapStandAloneImageWithinParagraph = false
